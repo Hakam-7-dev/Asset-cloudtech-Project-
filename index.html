@@ -20,7 +20,13 @@
     <nav class="navbar navbar-expand-lg background-color sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="Asset/Images/CLOUD TECH sky White horizontal.png" alt="" />
+          <picture>
+        <source srcset="Asset/Images/CLOUD TECH sky White horizontal.webp" type="image/webp">
+        <img src="Asset/Images/CLOUD TECH sky White horizontal.png" 
+            alt="Cloud Tech Logo" 
+            height="32" 
+            loading="lazy">
+      </picture>
         </a>
         <button
           class="navbar-toggler"
@@ -76,7 +82,10 @@
           <p>We proudly provide you with a fast & distinguished service.</p>
         </div>
         <div class="cube">
-          <img src="Asset/Images/laptop first sc.png" alt="" />
+          <picture>
+            <source srcset="Asset/Images/laptop first sc.webp">
+          <img src="Asset/Images/laptop first sc.png" alt="" loading = "lazy"/>
+          </picture>
         </div>
       </div>
     </div>
@@ -85,10 +94,14 @@
     <div class="about-us-section pt-4 pb-4 d-flex px-md-5 px-4">
       <div class="container-fluid">
         <div class="img ms-n1">
-          <img
+          <picture>
+            <source src="Asset/Images/S2 who.webp" type="">
+            <img
             src="Asset/Images/S2 who.png"
             alt=""
-            class="img-fluid w-100 py-lg-3 mb-lg-1 mb-5" />
+            class="img-fluid w-100 py-lg-3 mb-lg-1 mb-5" 
+            loading="lazy"/>
+          </picture>
         </div>
         <div
           class="content d-lg-flex justify-content-around flex-lg-row flex-md-column align-items-end">
@@ -98,13 +111,36 @@
               <span>Cloud Tech</span> is a leading company in the field of
               technology and IT solutions.
             </p>
-            <iframe
-              src="https://www.youtube.com/embed/khCGRsbRW-A?si=MGvNIX8gXGpwbWye"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
+        <!-- Lazy YouTube Embed -->
+        <div class="youtube-lazy" data-src="https://www.youtube.com/embed/khCGRsbRW-A?autoplay=1" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; cursor: pointer;">
+        <!-- Thumbnail image -->
+        <img src="https://img.youtube.com/vi/khCGRsbRW-A/hqdefault.jpg" 
+        alt="YouTube Video Thumbnail" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+  <!-- Play button overlay -->
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 60px; color: white; text-shadow: 0 0 10px black;">
+    ▶
+  </div>
+  <script>
+  document.querySelectorAll('.youtube-lazy').forEach(el => {
+    el.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = el.dataset.src;
+      iframe.title = "YouTube video player";
+      iframe.frameBorder = "0";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      iframe.style.position = 'absolute';
+      iframe.style.top = '0';
+      iframe.style.left = '0';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      el.innerHTML = '';
+      el.appendChild(iframe);
+    });
+  });
+</script>
+</div>
           </div>
           <div class="pargh text-light fs-5">
             <p>
@@ -124,7 +160,11 @@
       <div
         class="container-fluid d-lg-flex align-items-lg-center flex-column justify-content-lg-evenly flex-lg-row d-flex justify-content-evenly">
         <div class="img text-center">
-          <img src="Asset/Images/CLOUD TECH sky White.png" alt="" />
+          <picture>
+            <source src="Asset/Images/CLOUD TECH sky White.webp" type="">
+              <img src="Asset/Images/CLOUD TECH sky White.png" alt="" loading="lazy" />
+
+          </picture>
         </div>
         <div class="border-img">
           <span></span>
@@ -161,7 +201,10 @@
         <div class="row justify-content-center row-cols-auto">
           <div class="col-lg-3 col-md-4 col-sm-10 mt-3 col-8">
             <div class="product-1 p-3">
-              <img src="Asset/Images/services.png" alt="" />
+              <picture>
+                <source src="Asset/Images/services.webp" type="">
+                  <img src="Asset/Images/services.png" alt="" loading="lazy"/>
+              </picture>
               <div class="text">
                 <h2 class="text-light">
                   Microwave Links Equipment <br />
@@ -180,7 +223,10 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-10 mt-3 col-8">
             <div class="product-1 p-3">
-              <img src="Asset/Images/services.png" alt="" />
+              <picture>
+                <source src="Asset/Images/services.webp" type="">
+                  <img src="Asset/Images/services.png" alt="" loading="lazy"/>
+              </picture>
               <div class="text">
                 <h2 class="text-light">
                   Microwave Links Equipment <br />
@@ -199,7 +245,10 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-10 mt-3 col-8">
             <div class="product-1 p-3">
-              <img src="Asset/Images/services.png" alt="" />
+             <picture>
+                <source src="Asset/Images/services.webp" type="">
+                  <img src="Asset/Images/services.png" alt="" loading="lazy"/>
+              </picture>
               <div class="text">
                 <h2 class="text-light">
                   Microwave Links Equipment <br />
@@ -274,7 +323,13 @@
             providing solutions, which requires our full focus.
           </p>
         </div>
-        <img src="Asset/Images/foces.png" alt="" class="vc" />
+        <picture>
+          <source src="Asset//Images/foces.webp" type="">
+          <img src="Asset/Images/foces.png" 
+          alt=""
+           class="vc" 
+           loading="lazy"/>
+        </picture>
       </div>
     </div>
     <!-- End Foc Section -->
@@ -290,34 +345,71 @@
           data-bs-ride="carousel">
           <div class="carousel-inner d-flex w-100 text-center">
             <div class="carousel-item active" data-bs-interval="3000">
-              <img
+              <picture>
+                <source src="Asset/Images/QNB_Logo.webp" type="">
+                    <img
                 src="Asset/Images/QNB_Logo.png"
                 class="d-inline ms-4"
-                alt="..." />
-              <img
+                alt="..." 
+                loading="lazy"/>
+              </picture>
+              <picture>
+                <source src="Asset/Images/DHL.webp" type="">
+                    <img
                 src="Asset/Images/DHL.png"
-                alt=""
-                class="d-inline w-25 ms-4" />
-              <img
+                class="d-inline ms-4"
+                alt="..." 
+                loading="lazy"/>
+              </picture>
+              <picture>
+                <source src="Asset/Images/emmatell.webp" type="">
+                    <img
                 src="Asset/Images/emmatell.png"
-                alt=""
-                class="w-25 d-inline ms-4" />
-              <img src="Asset/Images/pronet.png" alt="" class="ms-4" />
+                class="d-inline ms-4"
+                alt="..." 
+                loading="lazy"/>
+              </picture>
+              <picture>
+                <source src="Asset/Images/pronet.webp" type="">
+      <img src="Asset/Images/pronet.png" alt="" class="ms-4" 
+              loading="lazy"/>
+              </picture>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="Asset/Images/ByblosBank.png" class="ms-4" alt="..." />
-              <img src="Asset/Images/HARAM.png" class="ms-4" alt="..." />
-              <img src="Asset/Images/jica.png" class="ms-4" alt="..." />
-              <img src="Asset/Images/KINGDOM.png" class="ms-4" alt="..." />
+              <picture>
+                <source src="Asset/Images/ByblosBank.webp" type="">
+                <img src="Asset/Images/ByblosBank.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
+              <picture>
+                <source src="Asset/Images/HARAM.webp" type="">
+                <img src="Asset/Images/HARAM.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
+              <picture>
+                <source src="Asset/Images/jica.webp" type="">
+                <img src="Asset/Images/jica.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
+              <picture>
+                <source src="Asset/Images/KINGDOM.webp" type="">
+                <img src="Asset/Images/KINGDOM.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
             </div>
             <div class="carousel-item">
-              <img src="Asset/Images/samanet-logo.png" class="ms-4" alt="..." />
-              <img src="Asset/Images/Layer 1.png" class="ms-4" alt="..." />
-              <img
-                src="Asset/Images/الائتمان الأهلي.png"
-                class="ms-4"
-                alt="..." />
-              <img src="Asset/Images/الشام.png" class="ms-4" alt="..." />
+                <picture>
+                <source src="Asset/Images/samanet-logo.webp" type="">
+                <img src="Asset/Images/samanet-logo.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
+                <picture>
+                <source src="Asset/Images/BAHRI.webp" type="">
+                <img src="Asset/Images/BAHRI.png" class="ms-4" alt="..." loading="lazy"/>
+                </picture>
+                <picture>
+                <source src="Asset/Images/بنك سورية والخليج.webp" type="">
+                <img src="Asset/Images/بنك سورية والخليج.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
+                <picture>
+                <source src="Asset/Images/بيمو.webp" type="">
+                <img src="Asset/Images/بيمو.png" class="ms-4" alt="..." loading="lazy"/>
+              </picture>
             </div>
           </div>
           <button
