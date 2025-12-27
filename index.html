@@ -7,7 +7,6 @@
   <!-- Preload Google Fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
         as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin/>
-  <link rel="stylesheet" fetchpriority="high" as="image" href="Asset/Optimized_images/laptop first sc.png">
   <link rel="preload" href="Asset/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'" media="all">
   <link rel="preload" href="Asset/css/all.min.css" as="style" onload="this.rel='stylesheet'" async>
   <link rel="stylesheet" href="Asset/css/style.css"/>
@@ -20,7 +19,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <picture>
-          <source srcset="Asset/Images/CLOUD TECH sky White horizontal.webp" fetchpriority="high" type="image/webp">
+          <source srcset="Asset/Images/CLOUD TECH sky White horizontal.webp" type="image/webp">
           <img src="Asset/Optimized_images/CLOUD TECH sky White horizontal.png" 
                fetchpriority="high" alt="Cloud Tech Logo" height="32" loading="eager">
         </picture>
@@ -52,7 +51,8 @@
   <div class="home-section">
     <div class="background">
       <picture>
-        <img src="Asset/Optimized_images/pattern 2.png" alt="" fetchpriority="high">
+        <img src="Asset/Optimized_images/pattern 2.png" alt="" fetchpriority="high"
+        loading="eager">
       </picture>
     </div>
     <div class="container d-flex justify-content-around align-items-center">
@@ -74,7 +74,7 @@
         <picture>
           <source src="Asset/Images/S2 who.webp" type="">
           <img src="Asset/Optimized_images/S2 who.png" alt="" class="img-fluid w-100 py-lg-3 mb-lg-1 mb-5" 
-               loading="eager"/>
+               loading="lazy"/>
         </picture>
       </div>
       <div class="content d-lg-flex justify-content-around flex-lg-row flex-md-column align-items-end">
@@ -98,14 +98,14 @@
   <div class="why-us-section">
      <div class="background">
       <picture>
-        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy">
+        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy" fetchpriority="low">
       </picture>
     </div>
     <div class="container-fluid d-lg-flex align-items-lg-center flex-column justify-content-lg-evenly flex-lg-row d-flex justify-content-evenly">
       <div class="img text-center">
         <picture>
           <source src="Asset/Images/CLOUD TECH sky White.webp" type="">
-          <img src="Asset/Optimized_images/CLOUD TECH sky White.png" alt="" loading="lazy"/>
+          <img src="Asset/Optimized_images/CLOUD TECH sky White.png" alt="" loading="lazy" fetchpriority="low"/>
         </picture>
       </div>
       <div class="border-img"><span></span></div>
@@ -139,7 +139,7 @@
           <div class="product-1 p-3">
             <picture>
               <source src="Asset/Images/services.webp" type="">
-              <img src="Asset/Optimized_images/services.png" alt="" loading="lazy"/>
+              <img src="Asset/Optimized_images/services.png" alt="" loading="lazy" fetchpriority="low"/>
             </picture>
             <div class="text">
               <h2 class="text-light">Microwave Links Equipment <br />(From A to Z)</h2>
@@ -152,7 +152,7 @@
           <div class="product-1 p-3">
             <picture>
               <source src="Asset/Images/services.webp" type="">
-              <img src="Asset/Optimized_images/services.png" alt="" loading="lazy"/>
+              <img src="Asset/Optimized_images/services.png" alt="" loading="lazy" fetchpriority="low"/>
             </picture>
             <div class="text">
               <h2 class="text-light">Microwave Links Equipment <br />(From A to Z)</h2>
@@ -165,7 +165,7 @@
           <div class="product-1 p-3">
             <picture>
               <source src="Asset/Images/services.webp" type="">
-              <img src="Asset/Optimized_images/services.png" alt="" loading="lazy"/>
+              <img src="Asset/Optimized_images/services.png" alt="" loading="lazy" fetchpriority="low"/>
             </picture>
             <div class="text">
               <h2 class="text-light">Microwave Links Equipment <br />(From A to Z)</h2>
@@ -182,7 +182,7 @@
   <div class="services">
      <div class="background">
       <picture>
-        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy">
+        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy" fetchpriority="low">
       </picture>
     </div>
     <div class="container d-flex justify-content-center align-items-center pt-5">
@@ -222,7 +222,7 @@
   <div class="focus-section">
     <div class="background">
       <picture>
-        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazyt">
+        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy" fetchpriority="low">
       </picture>
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-around flex-lg-row flex-column">
@@ -232,7 +232,7 @@
       </div>
       <picture>
         <source src="Asset/Images/foces.webp" type="">
-        <img src="Asset/Optimized_images/foces.png" alt="" class="vc" loading="lazy"/>
+        <img src="Asset/Optimized_images/foces.png" alt="" class="vc" loading="lazy" fetchpriority="low"/>
       </picture>
     </div>
   </div>
@@ -244,22 +244,22 @@
       <div id="carouselExampleInterval" class="carousel slide d-flex" data-bs-ride="carousel">
         <div class="carousel-inner d-flex w-100 text-center">
           <div class="carousel-item active" data-bs-interval="3000">
-            <picture><source src="Asset/Images/QNB_Logo.webp"><img src="Asset/Images/QNB_Logo.png" class="d-inline ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/DHL.webp"><img src="Asset/Images/DHL.png" class="d-inline ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/emmatell.webp"><img src="Asset/Images/emmatell.png" class="d-inline ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/pronet.webp"><img src="Asset/Images/pronet.png" class="ms-4" alt="..." loading="lazy"/></picture>
+            <picture><source src="Asset/Images/QNB_Logo.webp"><img src="Asset/Images/QNB_Logo.png" class="d-inline ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/DHL.webp"><img src="Asset/Images/DHL.png" class="d-inline ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/emmatell.webp"><img src="Asset/Images/emmatell.png" class="d-inline ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/pronet.webp"><img src="Asset/Images/pronet.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <picture><source src="Asset/Images/ByblosBank.webp"><img src="Asset/Images/ByblosBank.png" class="ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/HARAM.webp"><img src="Asset/Images/HARAM.png" class="ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/jica.webp"><img src="Asset/Images/jica.png" class="ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/KINGDOM.webp"><img src="Asset/Images/KINGDOM.png" class="ms-4" alt="..." loading="lazy"/></picture>
+            <picture><source src="Asset/Images/ByblosBank.webp"><img src="Asset/Images/ByblosBank.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/HARAM.webp"><img src="Asset/Images/HARAM.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/jica.webp"><img src="Asset/Images/jica.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/KINGDOM.webp"><img src="Asset/Images/KINGDOM.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
           </div>
           <div class="carousel-item">
-            <picture><source src="Asset/Images/samanet-logo.webp"><img src="Asset/Images/samanet-logo.png" class="ms-4" alt="..." loading="lazy"/></picture>
+            <picture><source src="Asset/Images/samanet-logo.webp"><img src="Asset/Images/samanet-logo.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
             <picture><source src="Asset/Images/BAHRI.webp"><img src="Asset/Images/BAHRI.png" class="ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/بنك سورية والخليج.webp"><img src="Asset/Images/بنك سورية والخليج.png" class="ms-4" alt="..." loading="lazy"/></picture>
-            <picture><source src="Asset/Images/بيمو.webp"><img src="Asset/Images/بيمو.png" class="ms-4" alt="..." loading="lazy"/></picture>
+            <picture><source src="Asset/Images/بنك سورية والخليج.webp"><img src="Asset/Images/بنك سورية والخليج.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
+            <picture><source src="Asset/Images/بيمو.webp"><img src="Asset/Images/بيمو.png" class="ms-4" alt="..." loading="lazy" fetchpriority="low"/></picture>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -278,7 +278,7 @@
   <div class="contact">
      <div class="background">
       <picture>
-        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy">
+        <img src="Asset/Optimized_images/pattern 2.png" alt="" loading="lazy" fetchpriority="low">
       </picture>
     </div>
     <div class="container text-light d-flex justify-content-center align-items-center flex-column">
