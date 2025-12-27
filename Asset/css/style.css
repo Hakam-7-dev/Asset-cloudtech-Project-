@@ -67,11 +67,12 @@ button.btn.btn-primary {
 /*Start Landing*/
 .home-section {
   position: relative;
-   display: flex;
+  display: flex;
   align-items: center;
   min-height: calc(10vh - 500px);
   margin-top: -0.9px;
   background: var(--main-background-color);
+  z-index: 100;
 }
 .home-section::before {
   content: "";
