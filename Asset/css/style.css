@@ -296,7 +296,7 @@ button.btn.btn-primary {
   background: none;
   border: none;
   letter-spacing: 2px;
-  color: var(--primary-color);
+  color: var(--secondary-text-color);
   font-weight: 700;
 }
 .products-section h3 {
@@ -366,7 +366,9 @@ button.btn.btn-primary {
   background: var(--radia-gradient);
   position: relative;
 }
-
+.focus-section .background{
+  width: 100%;
+}
 .focus-section .container-fluid {
   width: 100%;
   min-height: 50vh;
@@ -390,8 +392,8 @@ button.btn.btn-primary {
 .focus-section .ouvc-img {
   max-width: 100%;
 }
-.focus-section img {
-  max-width: 50%;
+.focus-section .container-fluid img {
+  max-width: 45%;
 }
 .focus-section picture{
   width: 100%;
@@ -399,7 +401,7 @@ button.btn.btn-primary {
 }
 @media (max-width: 991px) {
   .focus-section img {
-    max-width: 90%;
+    max-width: 85%;
   }
 }
 /*  End foc Section */
